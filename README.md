@@ -1,5 +1,7 @@
 # Third party PCPanel Software
 
+Maintained by [rm968211](https://github.com/rm968211). This is an independent continuation of the community project, based on version 1.7.1.
+
 Third party/community managed controller software for the [PCPanel](https://getpcpanel.com) devices.
 
 **This software is not affiliated with PCPanel Software**, the original software can be found [here](https://www.getpcpanel.com/download).
@@ -13,7 +15,7 @@ Development focus is mainly targeted at Windows but some effort is put into maki
 # Download
 
 The installer can be found by clicking the latest release on the right side of the page. When development is ongoing there will
-also be a 'snapshot' release which can be found by opening the [releases](https://github.com/nvdweem/PCPanel/releases) page.
+also be a 'snapshot' release which can be found by opening the [releases](https://github.com/rm968211/PC-Panel-Pro/releases) page.
 
 Once on the release page there will be a changelog and a list of assets. The Windows installer is the msi, the Linux installer is the .deb file.
 It's also possible to download the jar file to run it manually using a local Java installation.
@@ -34,7 +36,7 @@ Installing on Linux is a bit harder, see [Linux instructions](linux.md).
 # Issues / Feature requests
 
 If you encounter any issues with the software, or you have an idea for improvements please create an
-issue on the [issue tracker](https://github.com/nvdweem/PCPanel/issues). For issues, try to be as
+issue on the [issue tracker](https://github.com/rm968211/PC-Panel-Pro/issues). For issues, try to be as
 complete as possible in the description. The issue templates should indicate what information is needed.
 
 # Migration

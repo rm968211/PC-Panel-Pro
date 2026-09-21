@@ -16,8 +16,15 @@
 
     <description>PCPanel controller software</description>
 
+    <developers>
+        <developer>
+            <id>rm968211</id>
+            <url>https://github.com/rm968211</url>
+        </developer>
+    </developers>
+
     <properties>
-        <project.baseversion>1.7.1</project.baseversion>
+        <project.baseversion>1.8.0</project.baseversion>
         <project.snapshot></project.snapshot>
         <!--suppress UnresolvedMavenProperty -->
         <github.build>${env.GITHUB_RUN_NUMBER}</github.build>
@@ -390,7 +397,7 @@
             </activation>
             <properties>
                 <github.build>9999</github.build>
-                <github.repo>nvdweem/PCPanel</github.repo>
+                <github.repo>rm968211/PC-Panel-Pro</github.repo>
             </properties>
         </profile>
         <profile>

@@ -10,6 +10,8 @@ on:
     branches:
       - main
       - releases/**
+    tags:
+      - 'v*'
   workflow_dispatch:
 jobs:
   buildWindows:
@@ -66,6 +68,7 @@ jobs:
 
   preRelease:
     name: Pre-release
+    if: github.ref == 'refs/heads/main'
     needs:
       - buildWindows
       - buildLinux
@@ -121,3 +124,32 @@ jobs:
         run: |
           gh release upload latest-windows target/*
           gh release edit latest-windows --draft=false
+
+  release:
+    name: Release
+    if: github.ref_type == 'tag'
+    needs:
+      - buildWindows
+      - buildLinux
+    runs-on: ubuntu-latest
+    permissions:
+      contents: write
+    steps:
+      - uses: actions/checkout@v6
+      - uses: actions/download-artifact@v7
+        with:
+          name: windows-installer
+          path: target
+      - uses: actions/download-artifact@v7
+        with:
+          name: linux-installer
+          path: target
+      # The release name has to look like the version (v1.8.0), the in-app update check parses it.
+      - name: Create Release
+        env:
+          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+        run: |
+          gh release create "${{ github.ref_name }}" \
+            --title "${{ github.ref_name }}" \
+            --notes "$(sed '/##/Q' CHANGELOG.md)" \
+            target/*

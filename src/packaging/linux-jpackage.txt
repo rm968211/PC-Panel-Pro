@@ -9,7 +9,7 @@
 --temp "@project.build.directory@/installer-work"
 --java-options "--add-exports javafx.controls/com.sun.javafx.scene.control.skin.resources=@module.name@"
 --java-options "--add-exports javafx.base/com.sun.javafx.event=@module.name@"
---about-url "https://github.com/nvdweem/PCPanel"
+--about-url "https://github.com/rm968211/PC-Panel-Pro"
 --linux-menu-group PCPanel
 --linux-package-deps pulseaudio-utils
 --linux-package-deps xdotool
