@@ -2,6 +2,13 @@
 
 <!-- Releasenotes without version are included in releases -->
 
+**Fixes:**
+
+- The update check now looks at the releases of [rm968211/PC-Panel-Pro](https://github.com/rm968211/PC-Panel-Pro) instead of the original repository
+- Builds without CI also point to this repository for the update check
+
+## [1.7.1]
+
 **Warning:** This version uses a new format for the savefile.
 A backup will be made when converting. If you want to downgrade to a previous version, you can restore the backup.
 
