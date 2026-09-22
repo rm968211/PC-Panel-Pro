@@ -1,5 +1,5 @@
 # Third party PCPanel Software
-The original version of this software is here https://github.com/nvdweem/PCPanel. The maintainer decided to destroy the old version and completely rewrite the app. I disagree with their choice of framework and many UI/UX decisions, so i have forked it here to preserve it. I have no plans at all to maintain this for anybody besides myself. This software works fine for my purposes and i don't want to lose it. If there is something you'd like to add feel free to open a pr and i will review it.
+The original version of this software is here https://github.com/nvdweem/PCPanel. The maintainer decided to completely rewrite the app. I have forked the old version here to preserve it. I have no plans at all to maintain this for anybody besides myself. This software works fine for my purposes and i don't want to lose it. If there is something you'd like to add feel free to open a pr and i will review it.
 
 Maintained by [rm968211](https://github.com/rm968211). This is an independent continuation of the community project, based on version 1.7.1.
 
